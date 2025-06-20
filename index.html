@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+</head>
+ <style>
+    /* Hide scrollbar */
+    .hide-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .hide-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+
+<body class="">
+    <!-- nav bar  -->
+   <nav>
+    <div class="fixed h-30 w-full  flex bg-white/30 justify-between items-center p-10 backdrop-blur-3xl inset-0 bg-white  font-semibold z-50">
+
+        <div class="flex items-center gap-1 ">
+           <img src="logo.png" alt="logo" class=" object-cover h-24 w-24">
+           <span class="font-poppins text-4xl">Tools</span>
+        </div>
+
+         <!-- menu bar -->
+
+        <div class="hidden  lg:flex gap-12 items-center text-3xl cursor-pointer font-semibold">
+
+            <a href="index.html" class="font-inter hover:text-gray-500">Home</a>
+            <a href="#client" class="font-inter hover:text-gray-500">Clients</a>
+            <a href="technology.html" class="font-inter hover:text-gray-500">Technologies</a>
+             <a href="#services" class="font-inter hover:text-gray-500">Services</a>
+            <a href="contact.html" class="font-inter hover:text-gray-500">Contact</a>
+
+        </div>
+
+<!--
+        <div>
+            <button class="hidden lg:flex items-center border-1 border-black px-2 py-1 gap-2">
+                <i class="fa-regular fa-envelope text-xl"></i>
+                <span class="font-inter text-2xl">Electronic Developers</span>
+                <i class="fa-solid fa-arrow-right text-xl"></i>
+
+            </button>
+        </div>
+-->
+      
+           <!-- hamburger button -->
+
+        <div class="lg:hidden">
+            <button class="flex items-center" onclick="handleMenu()">
+                <i class="fa-solid fa-bars text-3xl text-gray-600 font-semibold"></i>
+            </button>
+        </div>
+
+
+
+      <!-- nav dialoug -->
+      <div id="nav_dialoug" class="fixed hidden inset-0 z-0 bg-white lg:hidden h-screen">
+         <div class="flex justify-between p-8 items-center h-30 w-full">
+            <div class="flex items-center gap-1 ">
+                <img src="logo.png" alt="logo" class=" object-containcover h-24 w-24 ">
+                <span class="font-poppins text-3xl font-semibold">Tools</span>
+             </div>
+
+              <div>
+                <button class="lg:hidden" onclick="handleMenu()">
+                    <i class="fa-solid fa-x text-gray-600 text-3xl font-semibold" ></i>
+                </button>
+            </div>
+         </div>
+         <!-- handling menu bar for phone  -->
+          <div class=" grid gap-16 py-8 px-8 font-poppins text-3xl mt-10 lg:hidden font-semibold inset-0 z-50 bg-white">
+            <a href="index.html" class="hover:bg-gray-300 p-5 block rounded-sm">Home</a>
+            <a href="#services" class="hover:bg-gray-300 p-5 block rounded-sm">Services</a>
+            <a href="contact.html" class="hover:bg-gray-300 p-5 block rounded-sm">Contact</a>
+            <a href="#client" class="hover:bg-gray-300 p-5 block rounded-sm">Clients</a>
+            <a href="technology.html" class="hover:bg-gray-300 p-5 block rounded-sm">Technology</a>
+
+          </div>
+
+       </div>
+    </div>
+</nav>
+
+
+   <!-- nav bar completed-->
+
+       <!--  hero section -->
+
+         <main>
+          <div id="hero" class="min-h-screen bg-gradient-to-br from-gray-400 via-slate-300 to-slate-600  py-50">
+            <div id="hero-section" class="flex flex-col mx-auto px-8 max-w-7xl">
+                <div id="version-text" class="flex gap-2  rounded-sm mx-auto justify-center items-center border border-transparent py-3 px-3 w-fit  hover:-translate-y-1 transition duration-300 text-shadow-lg group">
+                    <div class="h-3 w-3 border-4 border-gray-600 bg-gray-600  text-gray-800 rounded-full"></div>
+                    <p class="text-gray-500 font-poppins md:text-2xl">Tools That Build Tomorrow</p>
+                    <i class="fa-solid fa-arrow-right text-gray-500 group-hover:translate-x-1 transition"></i>
+                </div>
+
+                <p class="font-poppins text-5xl font-bold md:text-8xl leading-snug md:leading-snug text-gray-950 text-center py-10">Building Trust With <span class="text-gray-500">Khushiya Tools</span></p>
+
+                <p class="font-poppins text-left font-medium text-lg md:text-2xl py-2">From precision tools to complex machines,<span class="text-gray-600"> Khushiya Tools </span> blends mechanical and electrical innovation
+                    to turn imagination into reality. Trusted by giants like Tata Consultancy, Aeroflex, and Mega Pipes,
+                     we deliver solutions that drive progress.
+                 </p>
+
+                 <!--herso section buttons -->
+
+                <div class="flex flex-col gap-6 mt-10 md:flex md:flex-row justify-center md:gap-10 mx-auto">
+
+                  <a href="contact.html">
+                    <button class="border border-gray-800 bg-gray-800 text-lg font-inter font-medium text-white py-2 px-3 rounded-md md:py-5 md:px-10 md:text-xl hover:bg-transparent hover:text-gray-800">Lets Build Together</button>
+                  </a>
+                  <a href="project.html">
+                    <button class="border-2 border-gray-800 py-2 text-lg font-inter font-medium rounded-md md:py-5 md:px-10 md:text-xl hover:bg-slate-800 hover:text-white px-3">See Our Innovations</button>
+                  </a>
+                </div>
+
+                <p class="text-center text-lg py-10 md:text-xl font-inter">
+                    Driven by creativity and technology, Khushiya Tools delivers precision solutions
+                    that help industries build stronger, faster, and smarter.
+                </p>
+
+            </div>
+
+             <!-- clients relation  -->
+
+              <div class="md:py-10 px-5 md:px-0  py-30 mt-32 max-w-7xl mx-auto" id="client">
+                <div class=" flex flex-col justify-center items-center mx-auto md:px-10 bg-white/30 rounded-xl backdrop-blur-3xl mb-10 shadow-xl">
+                    <p class="headings text-3xl font-bold md:text-6xl text-shadow py-10">🤝 Our <span class="headings text-gray-700">Clients 🤝</span></p>
+                    <p class="text-black font-poppins md:text-3xl text-xl font-medium text-center w-full py-10 px-10 ">Building trusted partnerships across industries through precision, performance, and reliability !</p>
+                    <p class="font-inter font-medium md:text-2xl text-lg text-left  py-7 px-8 mb-10">At <span class="text-gray-700">Khushiya Tools</span> , we take pride in the strong relationships we've built across the manufacturing ecosystem. While we may not always deal directly with the end-client industries, our craftsmanship plays a key role in the supply chains of trusted contractors and vendors.
+               <br><br>With over a decade of experience and a commitment to quality, we’ve become the go-to partner for clients seeking reliability, flexibility, and innovation — whether it's for a single custom tool or components used in national-level infrastructure projects.
+              <br><br>Our client base includes fabricators, machine builders, OEM suppliers, and design houses who trust us for both small-batch production and high-precision custom jobs.</p>
+
+            </div>
+          </div>
+
+          <!-- client imae grid -->
+
+            <section class="max-w-7xl mx-auto mb-40">
+            <h1 class="py-20 font-poppins md:text-6xl text-3xl font-bold text-center">Our Giant <span class="text-slate-600">Clients</span></h1>
+
+            <div class="flex flex-col gap-15 ">
+                  <!--col1  -->
+                <div class="flex gap-5 justify-around -translate-12" id="col1">
+
+                    <div class=" h-28 w-28 md:h-48 md:w-48 rounded-xl ">
+                        <img src="logo1.jpeg" alt="" class="h-full w-full lg:object-cover rounded-xl shadow-xl">
+                        <p class="text-center font-poppins text-sm lg:text-lg">Mahendra</p>
+                    </div>
+                    
+                    <div class="h-28 w-28 md:h-48 md:w-48 rounded-xl">
+                        <img src="logo3.jpeg" alt="" class="h-full w-full lg:object-cover rounded-xl shadow-xl" >
+                        <p class="text-center font-poppins text-sm lg:text-lg">Jindal</p>
+                    </div>
+                    
+                    <div class="h-28 w-28 md:h-48 md:w-48 rounded-xl">
+                        <img src="logo14.jpeg" alt="" class="h-full w-full lg:object-cover rounded-xl shadow-xl" >
+                        <p class="text-center font-poppins text-sm lg:text-lg">TATA Steel</p>
+                    </div>
+                     <div class="h-28 w-28 md:h-48 md:w-48  rounded-xl">
+                        <img src="logo15.jpeg" alt="" class="h-full w-full lg:object-cover rounded-xl shadow-xl" >
+                        <p class="text-center font-poppins text-sm lg:text-lg">Aeroflex</p>
+                    </div>
+                     <div class="h-28 w-28 md:h-48 md:w-48  rounded-xl">
+                        <img src="logo16.jpeg" alt="" class="h-full w-full lg:object-cover rounded-xl shadow-xl" >
+                        <p class="text-center font-poppins text-sm lg:text-lg">Mega Pipes</p>
+                    </div>
+                   
+                
+                </div>
+
+                <div class="flex gap-5 justify-around " id="col2">
+                    <div class="h-28 w-28 md:h-48 md:w-48  rounded-xl">
+                        <img src="logo6.jpeg" alt="" class="h-full w-full lg:object-cover rounded-xl shadow-xl" >
+                        <p class="text-center font-poppins text-sm lg:text-lg">Samir&Dolly</p>
+                    </div>
+                    <div class="h-28 w-28 md:h-48 md:w-48  rounded-xl">
+                        <img src="logo7.jpeg" alt="" class="h-full w-full lg:object-cover rounded-xl shadow-xl" >
+                        <p class="text-center font-poppins text-sm lg:text-lg">Caparo</p>
+                    </div>
+                    <div class="h-28 w-28 md:h-48 md:w-48  rounded-xl">
+                        <img src="logo8.jpeg" alt="" class="h-full w-full lg:object-cover rounded-xl shadow-xl" >
+                        <p class="text-center lg:font-poppins text-sm lg:text-lg">Mungi</p>
+                    </div>
+                     <div class="h-28 w-28 md:h-48 md:w-48  rounded-xl">
+                        <img src="logo9.jpeg" alt="" class="h-full w-full lg:object-cover rounded-xl shadow-xl" >
+                        <p class="text-center lg:font-poppins text-sm lg:text-lg">shivam Steels</p>
+                    </div>
+                     <div class="h-28 w-28 md:h-48 md:w-48  rounded-xl">
+                        <img src="logo10.jpeg" alt="" class="h-full w-full lg:object-cover rounded-xl shadow-xl" >
+                        <p class="text-center lg:font-poppins text-sm lg:text-lg">Meta Engitech</p>
+                    </div>
+                    
+                </div>
+
+               <div class="flex gap-5 justify-around " id="col3">
+                    <div class="h-28 w-28 md:h-48 md:w-48  rounded-xl">
+                        <img src="logo12.jpeg" alt="" class="h-full w-full lg:object-cover rounded-xl shadow-xl" >
+                        <p class="text-center font-poppins text-sm lg:text-lg">Apollo Tubes</p>
+                    </div>
+                    <div class="h-28 w-28 md:h-48 md:w-48  rounded-xl">
+                        <img src="logo13.jpeg" alt="" class="h-full w-full lg:object-cover rounded-xl shadow-xl" >
+                        <p class="text-center font-poppins text-sm lg:text-lg">Maharashtra Seamless Ltd</p>
+                    </div>
+                    <div class="h-28 w-28 md:h-48 md:w-48  rounded-xl">
+                        <img src="logo4.jpeg" alt="" class="h-full w-full lg:object-cover rounded-xl shadow-xl" >
+                        <p class="text-center font-poppins text-sm lg:text-lg">Mittal Group</p>
+                    </div>
+                     <div class="h-28 w-28 md:h-48 md:w-48  rounded-xl">
+                        <img src="logo5.jpeg" alt="" class="h-full w-full lg:object-cover rounded-xl shadow-xl" >
+                        <p class="text-center font-poppins text-sm lg:text-lg">Tube India</p>
+                    </div>
+                    <div class="h-28 w-28 md:h-48 md:w-48  rounded-xl">
+                        <img src="logo2.jpeg" alt="" class="h-full w-full lg:object-cover rounded-xl shadow-xl" >
+                        <p class="text-center font-poppins text-sm lg:text-lg">Tyson Group</p>
+                    </div>
+                    
+                </div>
+
+            </div>
+           </section>
+
+
+            <!-- industries we served -->
+
+<section class="max-w-7xl py-10 mx-auto">
+  <div class="py-10 mb-8 mt-8">
+    <p class="font-poppins md:text-5xl text-center text-2xl font-bold">🏭 Industries We've <span class="text-gray-600">Served</span> </p>
+  </div>
+  <div class="py-5 px-4 md:px-0">
+    <div class="grid grid-row-1 lg:grid-cols-2 gap-5 items-center justify-items-center mx-auto place-items-center">
+
+      <!-- card1 -->
+
+      
+     <a href="automative.html">
+      <div class="shadow-xl  text-center px-6 py-6 rounded-xl hover:shadow-2xl bg-white/30 inset-0 backdrop-blur-0 h-80">
+        <div class="md:text-5xl text-4xl mb-5">🚗</div>
+        <div class="md:text-4xl text-2xl font-poppins font-medium mb-5">Automotive Parts</div>
+        <p class="text-md:xl text-lg font-inter text-gray-500">Manufactured mechanical components like scooter gears and stands. Supplied precision parts through trusted vendors
+           to tier-1 suppliers in the automotive sector.
+          </p>
+      </div>
+      </a>
+      
+
+      <!-- card2 -->
+
+      
+      <a href="railwiays.html">
+        <div class="shadow-xl  text-center px-6 py-6 rounded-xl hover:shadow-2xl  bg-white/30 inset-0 backdrop-blur-0 h-80">
+        <div class="md:text-5xl text-4xl mb-5">🚆</div>
+        <div class="md:text-4xl text-2xl font-poppins font-medium mb-5">Railways</div>
+        <p class="text-md:xl text-lg font-inter text-gray-500">Contributed as a third-party fabricator for engine component assemblies. Delivered custom-built mechanical parts for rolling stock and track maintenance. Known for precision welding,
+           gear support frames, and small-batch prototyping for railway equipment..
+          </p>
+      </div>
+      </a>
+      
+
+      <!-- card3 -->
+
+
+      
+      <a href="sports.html">
+       <div class="shadow-xl text-center px-6 py-6 rounded-xl hover:shadow-2xl  bg-white/30 inset-0 backdrop-blur-0 h-80">
+        <div class="md:text-5xl text-4xl mb-5">🏟️</div>
+        <div class="md:text-4xl text-2xl font-poppins font-medium mb-5">Sports Infrastructure</div>
+        <p class="text-md:xl text-lg font-inter text-gray-500">Contributed as a third-party supplier for national stadium border components. Delivered strong and lightweight mechanical structures used in fencing, seating mounts, and boundary gear.
+          Played a key role in custom metal jobs required on tight deadlines.
+          </p>
+      </div>
+      </a>
+      
+
+        <!-- card4 -->
+
+      
+      <a href="indsutrial.html">
+       <div class="shadow-xl  text-center px-6 py-6 rounded-xl hover:shadow-2xl bg-white/30 inset-0 backdrop-blur-0  h-80">
+        <div class="md:text-6xl text-4xl mb-5">🏭</div>
+        <div class="md:text-4xl text-2xl font-poppins font-medium mb-5">Industrial Equipment</div>
+        <p class="text-md:xl text-lg font-inter text-gray-500">Precision-machined parts for machines, tool and cutter jobs, and automation equipment. Supported maintenance and custom fabrication for production lines.
+          </p>
+      </div>
+      </a>
+      
+
+    
+    
+
+    </div>
+
+  </div>
+
+</section>
+
+                    <!-- why us -->
+
+                    <div class=" mt-15 max-w-7xl mx-auto px-4">
+                    <div>
+                      <h1 class="text-center font-poppins font-bold md:text-6xl text-3xl  py-10" > 🎯Why Choose <span class="text-gray-600">Us ?</span></h1>
+                    </div>
+
+                    <!-- bullet points -->
+
+                    <div class="py-10 text-left font-inter border bg-white/3- backdrop-blur-3xl px-10 shadow-2xl mb-20">
+                      <div class="flex gap-5 items-center py-5">
+                        <i class="fa-solid fa-hand-point-right text-xl text-gray-700"></i>
+                        <p class="font-poppins text-gray-700 md:text-2xl">Quick turnaround for urgent tasks</p>
+                      </div>
+                       <div class="flex gap-5 items-center py-5">
+                        <i class="fa-solid fa-hand-point-right text-xl text-gray-700"></i>
+                        <p class="font-poppins text-gray-700 md:text-2xl">Skilled team with hands-on experience in mechanical design and fabrication</p>
+                      </div>
+
+                       <div class="flex gap-5 items-center  py-5">
+                        <i class="fa-solid fa-hand-point-right text-xl text-gray-700"></i>
+                        <p class="font-poppins text-gray-700 md:text-2xl">Strong quality control at every stage of production</p>
+                      </div>
+
+                       <div class="flex gap-5 items-center  py-5">
+                        <i class="fa-solid fa-hand-point-right text-xl text-gray-700"></i>
+                        <p class="font-poppins text-gray-700 md:text-2xl">Versatile across multiple industries and machine types</p>
+                      </div>
+
+                       <div class="flex gap-5 items-center  py-5">
+                        <i class="fa-solid fa-hand-point-right text-xl text-gray-700"></i>
+                        <p class="font-poppins text-gray-700 md:text-2xl">Transparent communication and flexible collaboration</p>
+                      </div>
+
+                       <div class="flex gap-5 items-center  py-5">
+                        <i class="fa-solid fa-hand-point-right text-xl text-gray-700"></i>
+                        <p class="font-poppins text-gray-700 md:text-2xl">Decade-long experience delivering reliable engineering solutions</p>
+                      </div>
+
+                       <div class="flex gap-5 items-center  py-5">
+                        <i class="fa-solid fa-hand-point-right text-xl text-gray-700"></i>
+                        <p class="font-poppins text-gray-700 md:text-2xl">On-time delivery, even with tight or evolving project scopes</p>
+                      </div>
+
+                       <div class="flex gap-5 items-center  py-5">
+                        <i class="fa-solid fa-hand-point-right text-xl text-gray-700"></i>
+                        <p class="font-poppins text-gray-700 md:text-2xl">Excellent market reputation and strong vendor relationships</p>
+                      </div>
+
+
+                    </div>
+
+                    </div>
+
+<!-- slider -->
+
+ <div class="py-10 md:py-18 px-10 md:px-24 max-w-7xl mx-auto hidden">
+    <div class=" border bg-white/30 backdrop-blur-3xl">
+        <div class="relative">
+            <div id="left-indicator" class="absolute left-0 top-1/2 -translate-y-1/2 w-4 h-4 bg-gray-400 rounded-full opacity-0 transition-opacity duration-300"></div>
+            <div id="right-indicator" class="absolute right-0 top-1/2 -translate-y-1/2 w-4 h-4 bg-gray-400 rounded-full opacity-0 transition-opacity duration-300"></div>
+
+
+            <div id="line1" class=" flex justify-start items-center  space-x-6 overflow-x-hidden hide-scrollbar scroll-smooth touch-auto w-full py-8 px-10">
+              
+            <!-- company images -->
+
+                 <div class="flex flex-col justify-center items-center w-40 aspect-square  gap-2 flex-shrink-0">
+                    <img src="logo1.jpeg" alt="" class="w-full h-full object-fill hover:shadow-2xl group flex-shrink-0">
+                     <p class="font-poppins text-center font-normal ">Tata Steel</p>
+                 </div>
+                  <div class="flex flex-col justify-center items-center w-40 aspect-square  gap-2 flex-shrink-0">
+                    <img src="logo2.jpeg" alt="" class="w-full h-full object-fill hover:shadow-2xl group flex-shrink-0">
+                     <p class="font-poppins text-center font-normal ">Tata Steel</p>
+                 </div>
+                 <div class="flex flex-col justify-center items-center w-40 aspect-square  gap-2 flex-shrink-0">
+                    <img src="logo3.jpeg" alt="" class="w-full h-full object-fill hover:shadow-2xl group flex-shrink-0">
+                     <p class="font-poppins text-center font-normal ">Tata Steel</p>
+                 </div>
+
+                  <div class="flex flex-col justify-center items-center w-40 aspect-square  gap-2 flex-shrink-0">
+                    <img src="logo4.jpeg" alt="" class="w-full h-full object-fill hover:shadow-2xl group flex-shrink-0">
+                     <p class="font-poppins text-center font-normal ">Tata Steel</p>
+                 </div>
+                  <div class="flex flex-col justify-center items-center w-40 aspect-square  gap-2 flex-shrink-0">
+                    <img src="logo5.jpeg" alt="" class="w-full h-full object-fill hover:shadow-2xl group flex-shrink-0">
+                     <p class="font-poppins text-center font-normal ">Tata Steel</p>
+                 </div>
+
+                  <div class="flex flex-col justify-center items-center w-40 aspect-square gap-2 flex-shrink-0">
+                    <img src="logo6.jpeg" alt="" class="w-full h-full object-fill hover:shadow-2xl group flex-shrink-0">
+                     <p class="font-poppins text-center font-normal ">Tata Steel</p>
+                 </div>
+
+                  <div class="flex flex-col justify-center items-center w-40 aspect-square  gap-2 flex-shrink-0">
+                    <img src="logo7.jpeg" alt="" class="w-full h-full object-fill hover:shadow-2xl group flex-shrink-0">
+                     <p class="font-poppins text-center font-normal ">Tata Steel</p>
+                 </div>
+
+                  <div class="flex flex-col justify-center items-center w-40 aspect-square  gap-2 flex-shrink-0">
+                    <img src="logo8.jpeg" alt="" class="w-full h-full object-fill hover:shadow-2xl group flex-shrink-0">
+                     <p class="font-poppins text-center font-normal ">Tata Steel</p>
+                 </div>
+
+                  <div class="flex flex-col justify-center items-center w-40 aspect-square  gap-2 flex-shrink-0">
+                    <img src="logo9.jpeg" alt="" class="w-full h-full object-fill hover:shadow-2xl group flex-shrink-0">
+                     <p class="font-poppins text-center font-normal ">Tata Steel</p>
+                 </div>
+
+                  <div class="flex flex-col justify-center items-center w-40 aspect-square  gap-2 flex-shrink-0">
+                    <img src="logo10.jpeg" alt="" class="w-full h-full object-fill hover:shadow-2xl group flex-shrink-0">
+                     <p class="font-poppins text-center font-normal ">Tata Steel</p>
+                 </div>
+
+
+                  <div class="flex flex-col justify-center items-center w-40 aspect-square gap-2 flex-shrink-0">
+                    <img src="logo11.jpeg" alt="" class="w-full h-full object-fill hover:shadow-2xl group flex-shrink-0">
+                     <p class="font-poppins text-center font-normal ">Tata Steel</p>
+                 </div>
+
+
+                  <div class="flex flex-col justify-center items-center w-40 aspect-square  gap-2 flex-shrink-0">
+                    <img src="logo12.jpeg" alt="" class="w-full h-full object-fill hover:shadow-2xl group flex-shrink-0">
+                     <p class="font-poppins text-center font-normal ">Tata Steel</p>
+                 </div>
+
+                  <div class="flex flex-col justify-center items-center w-40 aspect-square  gap-2 flex-shrink-0">
+                    <img src="logo13.jpeg" alt="" class="w-full h-full object-fill hover:shadow-2xl group flex-shrink-0">
+                     <p class="font-poppins text-center font-normal ">Tata Steel</p>
+                 </div>
+
+                  <div class="flex flex-col justify-center items-center w-40 aspect-square  gap-2 flex-shrink-0">
+                    <img src="logo14.jpeg" alt="" class="w-full h-full object-fill hover:shadow-2xl group flex-shrink-0">
+                     <p class="font-poppins text-center font-normal ">Tata Steel</p>
+                 </div>
+                  <div class="flex flex-col justify-center items-center w-40 aspect-square  gap-2 flex-shrink-0">
+                    <img src="logo15.jpeg" alt="" class="w-full h-full object-fill hover:shadow-2xl group flex-shrink-0">
+                     <p class="font-poppins text-center font-normal ">Tata Steel</p>
+                 </div>
+                  <div class="flex flex-col justify-center items-center w-40 aspect-square gap-2 flex-shrink-0">
+                    <img src="logo16.jpeg" alt="" class="w-full h-full object-fill hover:shadow-2xl group flex-shrink-0">
+                     <p class="font-poppins text-center font-normal ">Tata Steel</p>
+                 </div>
+
+
+            </div>
+        </div>
+
+    </div>
+
+ </div>
+
+ 
+
+ <!-- slider end -->
+
+             <!-- about us -->
+             
+             <!-- about us heading -->
+
+          <div id="aboutUs" class="px-4 md:px-0 py-10 max-w-7xl mx-auto">
+            <div class=" mx-auto flex justify-center ">
+                <p class="font-poppins font-bold mb-5 mt-20 text-3xl md:text-6xl ">🧑‍🔧 About <span class="text-gray-700">Us !</span> </p>
+            </div>
+            
+            <!-- about us introduction -->
+
+            <div class=" mx-auto border  py-10 px-6 md:px-10 flex flex-col  justify-center items-center bg-white/30 rounded-xl backdrop-blur-3xl shadow-2xl overflow-hidden">
+
+               <!-- intro paragraph -->
+
+                <div class="max-w-5xl flex flex-col justify-center items-center ">
+                    <p class="font-inter text-gray-800 text-xl md:text-2xl font-medium mt-10">Founded in 2003 as Khushiya Tools, our journey began as a trusted third-party supplier of
+                    tools and components to major industrial players.
+                    Over the years. through consistent quality and dedication, we earned the confidence
+                    of leading companies and secured official vendor codes with several industry giants.
+                  </p>
+                  <br>
+                    <p class="font-inter text-gray-800  text-xl md:text-2xl font-medium ">Today, Khushiya Tools has evolved into a full-fledged manufacturing company,
+                        specializing in the design and production of high-performance machines
+                         and hardware components. With a focus on innovation, precision, and customer
+                          satisfaction, we proudly serve clients across various industrial sectors.
+                    </p>
+                    </div>
+
+                    <!-- what sets us apart -->
+
+                     <div class="mt-14 flex flex-col justify-start items-center gap-5 ">
+                        <div class="flex justify-start items-center gap-5 "> <i class="fa-solid fa-rocket md:text-4xl text-3xl"></i>
+                        <p class="md:text-6xl text-3xl font-semibold font-poppins text-start text-gray-700 py-10">What Sets Us Apart</p>
+                      </div>
+
+                            <!--  points of setting apart -->
+
+                            <div class="mt-10 font-inter text-xl mb-10">
+                                 <div class="flex flex-col md:flex md:flex-row md:items-center gap-5 md:gap-40 ">
+                                  
+                                  <!-- column1 -->
+
+                                   <div class="flex flex-col gap-5">
+                                    <!-- 1 -->
+                                    <div class="flex items-center justify-start  gap-3">
+                                        <i class="fa-solid fa-check"></i>
+                                        <p>In-house manufacturing capabilities</p>
+                                    </div>
+                                    <!-- 2 -->
+                                     <div class=" flex items-center justify-start gap-3">
+                                        <i class="fa-solid fa-check"></i>
+                                        <p>Official vendor for top industrial firms</p>
+                                    </div>
+                                    <!-- 3 -->
+                                     <div class="flex items-center justify-start gap-3">
+                                        <i class="fa-solid fa-check"></i>
+                                        <p>Over two decades of industry experience</p>
+                                    </div>
+
+                                </div>
+
+                                 <!-- column2 -->
+                                
+                                 <div class="flex flex-col md:gap-5 gap-5">
+                                  <!-- 1 -->
+                                    <div class="flex items-center justify-start  gap-3">
+                                        <i class="fa-solid fa-check"></i>
+                                        <p>In-house manufacturing capabilities</p>
+                                    </div>
+                                    <!-- 2 -->
+                                     <div class="flex items-center justify-start gap-3">
+                                        <i class="fa-solid fa-check"></i>
+                                        <p>Official vendor for top industrial firms</p>
+                                    </div>
+                                    <!-- 3 -->
+                                     <div class="flex items-center justify-start gap-3">
+                                        <i class="fa-solid fa-check"></i>
+                                        <p>Over two decades of industry experience</p>
+                                    </div>
+
+                                </div>
+
+                              </div>
+                            </div>
+                        </div>
+                     </div>
+            </div>
+
+         <!-- services -->
+
+             <div class="mt-30 px-6 mx-auto max-w-7xl md:px-0" id="services">
+                <div class="text-center">
+                    <p class="font-poppins text-3xl md:text-6xl font-bold mb-10"> 🛠️Our <span class="text-gray-800">Services</span></p>
+                    <p class="mt-5 font-inter text-lg md:text-2xl">From custom tools to large-scale industrial automation — we handle it all with precision and expertise.</p>
+                </div>
+
+                 <!-- service cards -->
+
+                 <div id="serviceblocks" class="px-10">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 justify-center items-center lg:gap-10 md:gap-10 gap-10 py-10">
+
+                          <!-- cnc machining -->
+
+                          <a href="cnc.html">
+                             <div class="relative shadow-xl hover:shadow-2xl transition-shadow duration-300 rounded-2xl bg-gray-400 bg-[url('1.jpeg')] bg-center bg-cover  flex flex-col justify-between h-full hover:ring-2 hover:ring-gray-500 ">
+                            <div class="absolute inset-0 bg-black/60 rounded-2xl"></div>
+                            <div class="relative z-10 text-white p-10 text-center">
+                                <p class="text-2xl font-poppins font-semi-bold">CNC Machining</p>
+                                <p class="font-inter text-lg font-normal"> Precision CNC machining services for custom parts, prototypes, and high-volume production.
+                                We work with a variety of materials, delivering accurate, repeatable results with tight tolerances.
+                                </p>
+                            </div>
+                            </div>
+                          </a>
+                       
+
+                            <!-- fabrication -->
+
+                            <a href="fabrication.html">
+                              <div class="relative shadow-xl hover:shadow-2xl rounded-2xl bg-gray-400 bg-[url('fabrication.jpeg')] bg-center bg-cover  transition flex flex-col justify-between h-full  hover:ring-2 hover:ring-gray-500 ">
+                            <div class="absolute inset-0 bg-black/60 rounded-2xl"></div>
+                            <div class="relative z-10 text-white p-10 text-center">
+                                <p class="text-2xl font-poppins font-semi-bold">Fabrication</p>
+                                <p class="font-inter text-lg font-normal">We provide high-quality metal fabrication services from cutting and welding to assembling complex structures.
+                                we ensures every component is built to spec with durability and precision in mind.
+                                </p>
+                            </div>
+                            </div>
+                            </a>
+
+                            <!-- tool n cutter -->
+
+                            <div class="relative shadow-xl hover:shadow-2xl rounded-2xl bg-gray-400 bg-[url('4.jpeg')] bg-center bg-cover transition flex flex-col justify-between h-full hover:ring-2 hover:ring-gray-500 ">
+                            <div class="absolute inset-0 bg-black/60 rounded-2xl"></div>
+                            <div class="relative z-10 text-white p-10 text-center">
+                                <p class="text-2xl font-poppins font-semi-bold">Tool N Cutter</p>
+                                <p class="font-inter text-lg font-normal"> No job too small — whether it's a single tool, part, or a quick fix, we’ve got you covered.
+                                 Our team delivers precision-crafted components even for the smallest custom manufacturing needs.
+                                </p>
+                            </div>
+                            </div>
+
+                            <!-- mahine maintainance -->
+
+                            <div class="relative shadow-xl hover:shadow-2xl rounded-2xl bg-gray-400 bg-[url('machinemaintainance.jpeg')] bg-center bg-cover transition flex flex-col justify-between h-full hover:ring-2 hover:ring-gray-500 ">
+                            <div class="absolute inset-0 bg-black/60 rounded-2xl"></div>
+                            <div class="relative z-10 text-white p-10 text-center">
+                                <p class="text-2xl font-poppins font-semi-bold">Machine Maintainance</p>
+                                 <p class="font-inter text-lg font-normal">    Preventive maintenance and repair services for your industrial machinery and systems.
+                                  Our timely interventions help avoid costly breakdowns, ensuring your operations run smoothly and safely.
+                                </p>
+                            </div>
+                            </div>
+
+                            <!-- automation -->
+
+                            <div class="relative shadow-xl hover:shadow-2xl  rounded-2xl bg-gray-400 bg-[url('automation.jpeg')] bg-center bg-cover transition flex flex-col justify-between h-full hover:ring-2 hover:ring-gray-500 ">
+                            <div class="absolute inset-0 bg-black/60 rounded-2xl"></div>
+                            <div class="relative z-10 text-white p-10 text-center">
+                                <p class="text-2xl font-poppins font-semi-bold">Automation</p>
+                                <p class="font-inter text-lg font-normal"> We integrate simple control systems and ensure precise mechanical assembly for machines and tools.
+                                 Our focus is on efficient operation, reliability, and ease of maintenance .
+                                  </p>
+                                </p>
+                            </div>
+                            </div>
+
+                            <!-- custom engineering -->
+
+                            <div class="relative shadow-xl hover:shadow-2xl rounded-2xl bg-gray-400 bg-[url('prototype.jpeg')] bg-center bg-cover transition flex flex-col justify-between h-full hover:ring-2 hover:ring-gray-500 ">
+                            <div class="absolute inset-0 bg-black/60 rounded-2xl"></div>
+                            <div class="relative z-10 text-white p-10 text-center">
+                                <p class="text-2xl font-poppins font-semi-bold">Custom Engineering</p>
+                                <p class="font-inter text-lg font-normal">Tailor-made designs and engineering support for complex industrial challenges.
+                                   From concept to CAD drawings, we engineer practical, innovative solutions that meet exact requirements.
+                                </p>
+                            </div>
+                            </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- contact -->
+
+              
+
+                 <!-- careers -->
+
+                <form action="" method="post">
+                   <section class=" max-w-7xl mx-auto py-30">
+
+                   <!-- introduction to careers -->
+                    
+                  <div class="">
+                    <h1 class="md:text-5xl font-poppins font-semibold text-3xl md:text-center px-10 mb-10">Careers At <span class="text-gray-700">Khushiya Tools</span></h1>
+                    <p class="text-lg md:text-2xl text-gray-600 font-inter text-center py-10">At Khushiya Tools, we believe in building more than just machines — we build careers. We offer passionate individuals the opportunity to work on innovative engineering solutions, develop their skills, and grow alongside a dedicated and experienced team.
+                       If you're ready to shape the future of manufacturing with us, explore the opportunities we have to offer.</p>
+                  </div>
+
+                  <!-- buttons -->
+
+                  <div class="px-5 md:py-14 py-6 flex gap-10 justify-center items-center">
+
+                    <!-- button1 -->
+                    
+                    <button class="border border-gray-600  font-poppins text-gray-600 font-medium bg-white md:py-3 py-2 w-1/3  rounded-3xl md:text-2xl text-lg group">Get a job
+                       <i class="fa-solid fa-arrow-right px-3 group-hover:translate-x-4 transition"></i>
+                       </button>
+                    
+                     <!-- button2 -->
+                     
+                    <button class="border border-gray-600  font-poppins text-white font-medium bg-gray-600 md:py-3 py-2 w-1/3  rounded-3xl md:text-2xl text-lg group">Get a experience
+                       <i class="fa-solid fa-arrow-right px-3 group-hover:translate-x-4 transition"></i>
+                       </button>
+                  
+                  </div>
+
+                  <!-- openings -->
+
+                  <div class="mt-12">
+                    <h1 class="text-center font-poppins font-medium  md:text-4xl text-2xl">Current Openings</h1>
+                  </div>
+
+                  <!-- openeing cards -->
+                   <div class="grid sm:grid-cols-1 lg:grid-cols-3 mt-20 px-10 lg:px-0 gap-x-5">
+
+                    <!-- card1 -->
+                     
+                    <a href="career_form_operator.html">
+                      <div class="bg-gray-100 backdrop-blur-3xl  rounded-3xl px-5 py-5 text-center mb-10 hover:shadow-2xl shadow-xl">
+                      <h1 class="text-xl md:text-3xl font-poppins font-medium mt-10"> Programmer / Operator</h1>
+                      <p class="text-xl font-inter text-gray-700 mt-3">MIDC , Bhosari | Full Time</p>
+                      <button class="border border-gray-600 py-2 px-5 mt-3 mb-10 font-inter rounded-xl md:text-xl text-lg hover:bg-gray-600 hover:text-white text-center">Apply now <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+                    </div>
+                    </a>
+
+                    <!-- card2 -->
+
+                   <a href="career_form_operator.html">
+                    <div class="bg-gray-100 backdrop-blur-3xl  rounded-3xl px-5 py-5 text-center mb-10 hover:shadow-2xl shadow-xl">
+                      <h1 class="text-xl md:text-3xl font-poppins font-medium mt-10">CAD Draftsman</h1>
+                      <p class="text-xl font-inter text-gray-700 mt-3">MIDC , Bhosari | Full Time</p>
+                      <button class="border border-gray-600 py-2 px-5 mt-3 mb-10 font-inter rounded-xl md:text-xl text-lg hover:bg-gray-600 hover:text-white text-center">Apply now <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+                    </div>
+                   </a>
+
+                      <!-- card3 -->
+
+                   <a href="career_form_operator.html">
+                    <div class="bg-gray-100 backdrop-blur-3xl  rounded-3xl px-5 py-5 text-center  mb-10 hover:shadow-2xl shadow-xl">
+                      <h1 class="text-xl md:text-3xl font-poppins font-medium mt-10">Mech Engineer</h1>
+                      <p class="text-xl font-inter text-gray-700 mt-3">MIDC , Bhosari | Full Time</p>
+                      <button class="border border-gray-600 py-2 px-5 mt-3 mb-10 font-inter rounded-xl md:text-xl text-lg hover:bg-gray-600 hover:text-white text-center">Apply now <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+                   </div>
+                   </a>
+
+                   </div>
+
+                   <div class="mt-10 text-center">
+                    <p class="font-poppins text-xl text-slate-600 font-semibold">If you are passionate about manufacturing innovation, apply now!</p>
+                   </div>
+
+                 </section> 
+                </form>
+                </div>
+
+                 <!-- main div ending -->
+
+                <footer class="">
+                  <div class="h-36 w-full bg-white mx-auto flex justify-center items-center">
+                    <img src="khushiya.png" alt="" class="h-16">
+                  </div>
+
+                 <!-- footer starts -->
+
+                <div class="w-full h-6 bg-slate-700"></div>
+                  <div class="bg-slate-600 py-10">
+                    <section class="flex justify-center items-center gap-10">
+                    <a href="https://www.instagram.com/khushiya_tools/?hl=en"><i class="fa-brands fa-instagram text-5xl hover:scale-110 transition duration-300"></i></a>  
+                      <i class="fa-brands fa-facebook text-5xl hover:scale-110 transition duration-300"></i>
+                      <i class="fa-brands fa-square-twitter text-5xl hover:scale-110 transition duration-300"></i>
+                      <i class="fa-brands fa-google-plus text-5xl hover:scale-110 transition duration-300"></i>
+                      <i class="fa-brands fa-square-youtube text-5xl hover:scale-110 transition duration-300"></i>
+
+                    </section>
+
+                    <section class="flex gap-16 justify-center items-center mt-10 ">
+                      <a href="index.html" class="font-poppins text-slate-300 hover:underline">home</a>
+                      <a href="contact.html" class="font-poppins text-slate-300 hover:underline">Contact Us</a>
+                      <a href="#" class="font-poppins text-slate-300 hover:underline">News</a>
+                  
+                    </section>
+
+                  </div>
+
+                </footer>
+
+
+
+        </main>
+
+<script src="index.js">
+    
+</script>
+   
+</body>
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
