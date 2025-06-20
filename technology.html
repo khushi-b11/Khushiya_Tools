@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+</head>
+
+<body>
+ <style>
+  body {
+    font-family: 'Poppins', sans-serif;
+  }
+</style>
+
+    <main class="bg-gradient-to-br from-gray-600-400 via-slate-300 to-slate-600">
+        <section class="py-20">
+
+            <!--page intro -->
+
+            <div class="max-w-7xl mx-auto">
+                <h1 class="font-poppins text-5xl font-semibold text-center">Our <span class="text-slate-600">Technologies</span></h1>
+                <p class="font-inter text-2xl text-slate-600 font-normal text-center py-10">We invest in modern technology to deliver precision-engineered parts, faster turnaround, and unmatched reliability. Here's a look at the backbone o
+                    f our manufacturing excellence.</p>
+            </div>
+
+            <!-- hero section machines -->
+              <h1 class="font-poppins text-5xl font-semibold text-center mt-10"> Tools in Our <span class="text-slate-600">ToolBox ⚙️</span></h1>
+
+            <div class="mt-30 grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-8 ml-20 mr-20">
+
+                <!-- card1 cnc -->
+
+                <div class="p-4  bg-white flex-row justify-center items-center rounded-lg shadow-xl hover:shadow-2xl">
+                    <img src="cnc.jpg" alt="" class="h-72 w-full">
+                    <h1 class="font-poppins font-semibold text-xl mt-2">CNC MACHINE</h1>
+                    <p class="font-poppins text-slate-600 font-normal text-lg mt-4">
+                       <i class="fa-solid fa-circle text-sm"></i>
+                        3-Axis & 4-Axis precision cutting for complex geometries
+                    </p>
+                    <p class="font-poppins text-slate-600 font-normal text-lg">
+                       <i class="fa-solid fa-circle text-sm"></i>   
+                       ±0.01 mm tight tolerance
+                    </p>
+                    <p  class="font-poppins text-slate-600 font-normal text-lg">
+                       <i class="fa-solid fa-circle text-sm"></i>
+                       Suitable for batch production, prototyping, and metal tool shaping
+                    </p>
+                    <p class="font-poppins text-slate-600 font-semibold text-lg  underline cursor-pointer py-2" onclick="openLightbox('https://www.youtube.com/embed/_pSYopTb36M')">View in Action</p>
+                </div>
+
+                <!-- card2 lathe -->
+
+                 <div class="p-4  bg-white flex-row justify-center items-center rounded-lg shadow-xl hover:shadow-2xl">
+                    <img src="lathe.jpg" alt="" class="h-72 w-full">
+                    <h1 class="font-poppins font-semibold text-xl mt-2">LATHE MACHINE</h1>
+                    <p class="font-poppins text-slate-600 font-normal text-lg mt-4">
+                       <i class="fa-solid fa-circle text-sm"></i>
+                       High-precision shaft turning, threading, and knurling
+                    </p>
+                    <p class="font-poppins text-slate-600 font-normal text-lg">
+                       <i class="fa-solid fa-circle text-sm"></i>   
+                       Ideal for cylindrical components like pulleys, sleeves, and bushings
+                    </p>
+                    <p  class="font-poppins text-slate-600 font-normal text-lg">
+                       <i class="fa-solid fa-circle text-sm"></i>
+                       Manual and semi-automatic options available
+                    </p>
+                    <p class="font-poppins text-slate-600 font-semibold text-lg  underline cursor-pointer  py-2" onclick="openLightbox('https://www.youtube.com/embed/8EsAxOnzEms')">See Lathe Projects</p>
+                </div>
+                
+                <!-- card3 vmc -->
+
+                 <div class="p-4  bg-white flex-row justify-center items-center rounded-lg shadow-xl hover:shadow-2xl">
+                    <img src="vmc.webp" alt="" class="h-72 w-full">
+                    <h1 class="font-poppins font-semibold text-xl mt-2">VMC MACHINE</h1>
+                    <p class="font-poppins text-slate-600 font-normal text-lg mt-4">
+                       <i class="fa-solid fa-circle text-sm"></i>
+                       4-Axis VMC capable of large, high-speed milling jobs
+                    </p>
+                    <p class="font-poppins text-slate-600 font-normal text-lg">
+                       <i class="fa-solid fa-circle text-sm"></i>   
+                       CAM-programmable for consistent part production
+                    </p>
+                    <p  class="font-poppins text-slate-600 font-normal text-lg">
+                       <i class="fa-solid fa-circle text-sm"></i>
+                       Handles aluminum, steel, and other tough metals
+                    </p>
+                    <p class="font-poppins text-slate-600 font-semibold text-lg  underline cursor-pointer py-2" onclick="openLightbox('https://www.youtube.com/embed/8EsAxOnzEms')">Explore VMC Capabilities</p>
+                </div>
+
+                 <!-- card4 m1tr -->
+
+                 <div class="p-4  bg-white flex-row justify-center items-center rounded-lg shadow-xl hover:shadow-2xl">
+                    <img src="m1tr.webp" alt="" class="h-72 w-full">
+                    <h1 class="font-poppins font-semibold text-xl mt-2">M1TR MACHINE</h1>
+                    <p class="font-poppins text-slate-600 font-normal text-lg mt-4">
+                       <i class="fa-solid fa-circle text-sm"></i>
+                      Manually operated but high accuracy
+                    </p>
+                    <p class="font-poppins text-slate-600 font-normal text-lg">
+                       <i class="fa-solid fa-circle text-sm"></i>   
+                       Versatile turret milling for drilling, slotting, and shaping
+                    </p>
+                    <p  class="font-poppins text-slate-600 font-normal text-lg">
+                       <i class="fa-solid fa-circle text-sm"></i>
+                       Good for dies, gears, and customized tool contours
+                    </p>
+                    <p class="font-poppins text-slate-600 font-semibold text-lg  underline cursor-pointer py-2" onclick="openLightbox('https://www.youtube.com/embed/8EsAxOnzEms')">See Sample Jobs</p>
+                </div>
+
+                <!-- card5 trobe -->
+
+                 <div class="p-4  bg-white flex-row justify-center items-center rounded-lg shadow-xl hover:shadow-2xl">
+                    <img src="trobe.jpg" alt="" class="h-72 w-full">
+                    <h1 class="font-poppins font-semibold text-xl mt-2">TRAUB MACHINE</h1>
+                    <p class="font-poppins text-slate-600 font-normal text-lg mt-4">
+                       <i class="fa-solid fa-circle text-sm"></i>
+                     Used for intricate machining on small to medium-sized parts
+                    </p>
+                    <p class="font-poppins text-slate-600 font-normal text-lg">
+                       <i class="fa-solid fa-circle text-sm"></i>   
+                       Suited for grooving, boring, and fine finishing
+                    </p>
+                    <p  class="font-poppins text-slate-600 font-normal text-lg">
+                       <i class="fa-solid fa-circle text-sm"></i>
+                      Especially useful in precision assembly components
+                    </p>
+                    <p class="font-poppins text-slate-600 font-semibold text-lg  underline cursor-pointer py-2" onclick="openLightbox('https://www.youtube.com/embed/422ISheLSXc')">What’s Made with Trobe</p>
+                </div>
+
+                 <!-- card6 drilling -->
+
+                 <div class="p-4  bg-white flex-row justify-center items-center rounded-lg shadow-xl hover:shadow-2xl">
+                    <img src="drill.webp" alt="" class="h-72 w-full">
+                    <h1 class="font-poppins font-semibold text-xl mt-2">Drilling MACHINE</h1>
+                    <p class="font-poppins text-slate-600 font-normal text-lg mt-4">
+                       <i class="fa-solid fa-circle text-sm"></i>
+                     Multi-spindle and deep hole drilling support
+                    </p>
+                    <p class="font-poppins text-slate-600 font-normal text-lg">
+                       <i class="fa-solid fa-circle text-sm"></i>   
+                       Suitable for flanges, brackets, and tooling bases
+                    </p>
+                    <p  class="font-poppins text-slate-600 font-normal text-lg">
+                       <i class="fa-solid fa-circle text-sm"></i>
+                      Supports mild steel, cast iron, and aluminum jobs
+                    </p>
+                    <p class="font-poppins text-slate-600 font-semibold text-lg  underline cursor-pointer py-2" onclick="openLightbox('https://www.youtube.com/embed/8EsAxOnzEms')">View Drilling Projects</p>
+                </div>
+
+                 <!-- card7 TOOL and cutter -->
+
+                 <div class="p-4  bg-white flex-row justify-center items-center rounded-lg shadow-xl hover:shadow-2xl">
+                    <img src="toolncutter.jpg" alt="" class="h-72 w-full">
+                    <h1 class="font-poppins font-semibold text-xl mt-2">TOOL & CUTTER MACHINE</h1>
+                    <p class="font-poppins text-slate-600 font-normal text-lg mt-4">
+                       <i class="fa-solid fa-circle text-sm"></i>
+                     For sharpening and shaping of custom tools
+                    </p>
+                    <p class="font-poppins text-slate-600 font-normal text-lg">
+                       <i class="fa-solid fa-circle text-sm"></i>   
+                       Supports reconditioning of worn-out industrial tools
+                    </p>
+                    <p  class="font-poppins text-slate-600 font-normal text-lg">
+                       <i class="fa-solid fa-circle text-sm"></i>
+                     Crucial in maintaining accuracy in cutting jobs
+                    </p>
+                    <p class="font-poppins text-slate-600 font-semibold text-lg  underline cursor-pointer py-2" onclick="openLightbox('https://www.youtube.com/embed/8EsAxOnzEms')"> Tool Design Gallery</p>
+                </div>
+
+                 <!-- card8 fabrication station -->
+
+                 <div class="p-4  bg-white flex-row justify-center items-center rounded-lg shadow-xl hover:shadow-2xl">
+                    <img src="milling.jpg" alt="" class="h-72 w-full">
+                    <h1 class="font-poppins font-semibold text-xl mt-2"> Welding, Cutting & Assembly</h1>
+                    <p class="font-poppins text-slate-600 font-normal text-lg mt-4">
+                       <i class="fa-solid fa-circle text-sm"></i>
+                     Sheet metal bending, MIG/TIG welding, frame and structural fabrication
+                    </p>
+                    <p class="font-poppins text-slate-600 font-normal text-lg">
+                       <i class="fa-solid fa-circle text-sm"></i>   
+                     Used in manufacturing trolleys, machine enclosures, tables, lifters
+                    </p>
+                    <p  class="font-poppins text-slate-600 font-normal text-lg">
+                       <i class="fa-solid fa-circle text-sm"></i>
+                     Supports rapid prototyping of custom designs
+                    </p>
+                    <p class="font-poppins text-slate-600 font-semibold text-lg  underline cursor-pointer py-2" onclick="openLightbox('https://www.youtube.com/embed/_pSYopTb36M')">See Fabrication Works</p>
+                </div>
+
+            </div>
+
+            <!-- lightbox model -->
+
+            <section>
+               <div id="lightbox" class="bg-black/70 inset-0 fixed z-50  justify-center items-center hidden">
+                  <div class="bg-white/30 inset-0 backdrop-blur-0 relative  max-w-4xl w-full h-96 p-4">
+                     <button class="absolute text-white " type="button" onclick="closelightbox()">
+                        <i class="fa-solid fa-xmark text-xl"></i>
+                     </button>
+                     <iframe src="" a class="rounded-lg w-full h-full"  allowfullscree frameborder="0" id="vedioframe"></iframe>
+                  </div>
+               </div>
+            </section>
+
+            <!-- Digital technolgoy -->
+
+            <section class=" mt-20">
+
+               <h1 class="font-poppins text-5xl text-center font-bold mb-20">Digital Tools <span class="text-gray-600">Used</span></h1>
+
+              <div class="grid grid-cols-2 place-items-center lg:max-w-7xl mx-auto lg:gap-y-20 gap-5">
+
+               <div class="   lg:h-52 lg:w-xl bg-slate-400 flex justify-center items-center shadow-2xl rounded-tl-full">
+                  <p class="font-poppins text-center lg:text-xl py-10 px-10">AutoCAD for design and <br> engineering drawings</p>
+               </div>
+
+               <div class="   lg:h-52 lg:w-xl bg-slate-400 flex justify-center items-center  shadow-2xl  rounded-tr-full">
+                  <p class="font-poppins text-center py-10 px-10  lg:text-xl">CAM software  for CNC programming <br> (like MasterCAM, Fusion360)</p>
+               </div>
+
+               <div class="   lg:h-52 lg:w-xl bg-slate-400 flex justify-center items-center  shadow-2xl  rounded-bl-full">
+                  <p class="font-poppins text-center py-10 px-10 lg:text-xl">Digital Quality Inspection with dial <br> gauges & calipers</p>
+               </div>
+
+               <div class=" lg:h-52 lg:w-xl  bg-slate-400 flex justify-center items-center  shadow-2xl  rounded-br-full">
+                  <p class="font-poppins text-center  py-10 px-10  lg:text-xl"> Tally / BUSY Software For quoting<br>,and bill of materials. </p>
+               </div>
+            
+           
+              
+
+              </div>
+
+              <div class="max-w-7xl mx-auto  items-center flex justify-center -translate-y-24 lg:-translate-y-44 ">
+                       
+                       <h1 class="font-poppins lg:text-3xl font-bold bg-slate-300  w-fit py-10 px-5 lg:px-10 lg:py-20 rounded-3xl shadow-2xl">Digital <span class="text-gray-600">Capabilities</span>
+             </div>
+               </h1>
+              </div>
+
+            </section>
+          
+            <!-- Why tech Maters -->
+
+            <section class="px-30 py-10 ">
+               <h1 class="font-poppins text-5xl font-bold text-center">Technology <span class="text-slate-600">Matters</span></h1>
+
+               <div class="lg:flex justify-between items-center py-10 gap-x-16 mt-30">
+
+                  <div class="lg:w-1/3 py-10 lg:py-0">
+
+                       <h1 class="font-poppins font-semibold text-3xl hover:underline">⚡ Faster Turnaround</h1>
+                       <p class="font-poppins font-normal text-xl py-4">Modern CNCs and VMCs reduce production cycles by up to 40%.</p>
+                      
+                  </div>     
+
+                 <div class="lg:w-1/3 py-10 lg:py-0">
+                                       
+                       <h1 class="font-poppins font-semibold text-3xl hover:underline">🎯 Precision Every Time</h1>
+                       <p class="font-poppins font-normal text-xl py-4">±0.01 mm tolerance ensures consistent part quality and performance.</p>
+                      
+                  </div>    
+
+                 <div class="lg:w-1/3 py-10 lg:py-0">
+                                       
+                       <h1 class="font-poppins font-semibold text-3xl hover:underline">🔄 Custom & Repeat Jobs</h1>
+                       <p class="font-poppins font-normal text-xl py-4">CAM programming lets us replicate custom orders with zero variation..</p>
+                      
+                  </div>     
+
+               </div>
+
+            </section>
+
+
+            <!-- home button -->
+             
+             <div class="flex  justify-center items-center py-20  hover:-translate-y-2 transform duration-300 transition">
+             <a href="index.html">
+            <button class="py-3 px-10 font-poppins text-2xl  shadow-xl bg-gray-600 text-white  rounded-full  cursor-pointer "> Back to Home</button>
+            </a>
+            </div>
+
+           
+
+         
+
+
+
+
+        </section>
+
+ <!-- <script>
+   function openLightbox(vediourl){
+  const frame = document.getElementById('lightbox');
+const vedio = document.getElementById('vedioframe');
+vedio.src=vediourl
+frame.classList.remove('hidden');
+frame.classList.add('flex');
+}
+
+function closelightbox(){
+   const frame = document.getElementById('lightbox');
+   frame.classList.remove('flex');
+   frame.classList.add('hidden');
+
+}
+</script>  -->
+
+    </main>
+    <script src="index.js" defer></script>
+</body>
+</html>

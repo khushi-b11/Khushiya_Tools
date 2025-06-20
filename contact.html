@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+         <link rel="stylesheet" href="output.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+</head>
+<body>
+ <style>
+  body {
+    font-family: 'Poppins', sans-serif;
+  }
+</style>
+
+
+    <main class="bg-gradient-to-br from-gray-400 via-slate-300 to-slate-600 ">
+                     <section class="py-10 max-w-7xl lg:px-0 px-5 mx-auto ">
+                  <div class="text-center">
+                    <h1 class="md:text-5xl text-3xl font-poppins font-semibold py-10 text-center">Contact <span class="text-gray-700">Us</span></h1>
+                    <p class="text-center text-inter text-gray-600 font-medium text-xl md:text-2xl">Want to be our next Success story contact here!</p>
+                  </div>
+
+                  <!--contact  buttons -->
+
+
+                  <form method="post" id="formcontact">
+                  <div class=" lg:flex py-10 md:mt-10 px-20 gap-10 space-y-5 lg:space-y-0 lg:justify-center lg:items-center lg:mx-auto">
+
+                <!-- button1 -->
+                  
+                    <div class="bg-white flex justify-start items-center gap-2 py-4 px-6 rounded-3xl lg:w-1/2">
+                      <i class="fa-regular fa-envelope text-2xl text-gray-400 "></i>
+                     <input type="email" placeholder="Email" class=" md:text-xl  text-lg font-poppins rounded-3xl border-none outline-none" name="email">
+                    </div>
+
+                    <!-- button2 -->
+
+                     <div class="bg-white flex justify-start items-center gap-2 py-4 px-6 rounded-3xl lg:w-1/2">
+                      <i class="fa-solid fa-user text-2xl font-poppins text-gray-400 "></i>
+                     <input type="name" placeholder="Name" class=" md:text-xl font-poppins text-lg rounded-3xl border-none outline-none" name="name">
+                    </div>
+
+                  </div>
+
+                  <!-- button3 -->
+
+                   <!-- <div class="flex lg:mx-auto justify-center items-center py-20 px-20 hover:-translate-y-1 transform duration-300 transition ">
+                     <button class="py-3 px-10 font-poppins text-2xl shadow-xl bg-gray-600 text-white  rounded-full ">Submit</button>
+                  </div> -->
+
+                   <div class="px-20">
+                    <div class="lg:mx-auto py-4 bg-gray-600 w-full rounded-3xl text-center hover:bg-opacity-90  justify-start">
+                    <button class="font-poppins text-2xl text-white  text-center" type="submit" name="btn">Submit</button>
+                  </div>
+                  </div>
+
+               
+                  <!-- footer of contact section -->
+
+                  <div class="py-60">
+                    <div class="bg-black/30 backdrop-blur-3xl  w-full h-60  flex" >
+
+                   <!-- location -->
+
+                    <div id="location" class=" mx-auto  flex flex-col items-center justify-center -translate-y-12 gap-3">
+                      <div class="md:h-40 md:w-40 h-20 w-20 bg-white rounded-full flex justify-center items-center  border border-gray-300">
+                        <i class="fa-solid fa-location-dot md:text-5xl text-3xl"></i>
+                      </div>
+                      <div class="font-normal font-poppins flex flex-col text-center text-sm md:text-lg">
+                         <a href="https://www.google.com/maps/dir//JRGG%2B2J7,+MIDC,+Bhosari,+Pimpri-Chinchwad,+Maharashtra+411026/@18.6250181,73.7441495,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3bc2b9db4fd78409:0x5f066b4e9e1e9867!2m2!1d73.8267739!2d18.6250372?entry=ttu&g_ep=EgoyMDI1MDUxNS4xIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D"  onclick="handledirection(event)" class="hover:text-gray-800">JRGG+2J7 , MIDC , Bhosari <br>
+                      Pimpri Chinchwad</a>
+                      </div>
+                     
+                    </div>
+
+                    <!--email  -->
+
+                    <div class=" mx-auto  flex flex-col items-center justify-center  -translate-y-12 gap-3">
+                      <div class="md:h-40 md:w-40 h-20 w-20 bg-white rounded-full flex justify-center items-center  border border-gray-300">
+                       <i class="fa-regular fa-envelope  text-3xl md:text-5xl"></i>
+                      </div>
+                      <div class=" font-poppins font-normal md:text-lg text-sm flex flex-col justify-center items-center">
+                         <a href="https://mail.google.com/mail/?view=cm&fs=1&to=Khushiyatools@gmail.com" target="_blank"  class="hover:text-gray-800">Khushiyatools@gmail.com</a>
+                         <a href="https://mail.google.com/mail/?view=cm&fs=1&to=Suryakantbiradar@gmail.com" target="_blank"  class="hover:text-gray-800">Suryakantbiradar@gmail.com</a>
+                      </div>
+                     
+                    </div>
+
+                    <!-- phone number -->
+
+                    <div class=" mx-auto flex flex-col items-center justify-center  -translate-y-12 gap-3">
+                      <div class="md:h-40 md:w-40 h-20 w-20 bg-white rounded-full flex justify-center items-center  border border-gray-300">
+                        <i class="fa-solid fa-phone md:text-5xl text-3xl"></i> 
+                      </div>
+                      <div class="md:font-normal md:text-lg text-sm font-poppins flex flex-col text-center">
+                         <p  class="hover:text-gray-800">Khushiya Tools </p>
+                      <p  class="hover:text-gray-800">9970920402</p>
+                      </div>
+                     
+                    </div>
+
+                </div>
+                </div>
+
+
+
+                <!-- quotation -->
+
+            <div class="lg:w-4xl  bg-transparent text-gray-600 backdrop-blur-lg p-8 shadow-3xl mx-auto ">
+                <h1 class="text-center font-poppins text-5xl font-normal">Want to quote?</h1>
+
+                <div class="mt-10">
+                    <label for="name" class="font-poppins text-xl">Type Of Service</label><br> 
+                    <input type="text" placeholder="Company Name" class="bg-white py-3 px-2 w-full text-lg text-gray-600 rounded-2xl font-poppins mt-4 ring-0 focus:outline-none focus:ring-2 focus:ring-slate-500" name="service">
+                </div>
+
+                <div class="mt-10">
+                    <label for="email" class="font-poppins text-xl">Material Required</Address></label><br> 
+                    <input type="text" placeholder="steel..." class="bg-white py-3 px-2 w-full text-lg text-gray-600 rounded-2xl font-poppins mt-4 ring-0 focus:outline-none focus:ring-2 focus:ring-slate-50 " name = "material">
+                </div>
+
+                 <div class="mt-10">
+                    <label for="phone" class="font-poppins text-xl">Quantity Needed</Address></label><br> 
+                    <input type="number" placeholder="Nos" class="bg-white py-3 px-2 w-full text-lg text-gray-600 rounded-2xl font-poppins mt-4 ring-0 focus:outline-none focus:ring-2 focus:ring-slate-500" name="quantity">
+                </div>
+
+                 <div class="mt-10">
+                    <label for="name" class="font-poppins text-xl">Additional Notes</label><br> 
+                    <textarea row="1"  placeholder="additional message"  class="bg-white  w-full text-lg text-gray-600 py-3 px-2 rounded-2xl font-poppins mt-4 ring-0 focus:outline-none focus:ring-2 focus:ring-slate-500"></textarea>
+                   
+                </div>
+                </div>
+                
+
+                 <div class="flex  justify-center items-center py-20 gap-10">
+             
+                 <button class="py-3 px-10 font-poppins text-2xl  shadow-xl bg-gray-600 text-white  rounded-full   hover:-translate-y-1 transform duration-300 transition  cursor-pointer ">Submit Quote</button>
+                 <a href="index.html" class="flex justify-center items-center">
+                 <button class="py-3 px-10 font-poppins text-2xl  shadow-xl hover:shadow-2xl bg-gray-600 text-white transition-all rounded-full   hover:-translate-y-1 transform duration-300 cursor-pointer " type="reset"> Reset form</button>
+                 </a>
+               </div>
+                 </form>
+
+                <a href="index.html" class="flex justify-center items-center">
+                 <button class="py-3 px-10 font-poppins text-2xl  shadow-xl hover:shadow-2xl bg-gray-600 text-white transition-all rounded-full   hover:-translate-y-1 transform duration-300 cursor-pointer "> Back to Home</button>
+                 </a>
+            
+                 </section>
+                 </main>
+
+    <script>
+      let url ='https://script.google.com/macros/s/AKfycbzTracpOW-5bIaaT_iaEhCkedfmUM33Wz5MBNYiC7AxVd8XY76O38B27YRbnI1MHECI/exec';
+      let contactdetail = document.querySelector('#formcontact');
+      contactdetail.addEventListener("submit",(e)=>{
+      e.target.btn.innerHTML ="Submitting.....";
+        let data = new FormData(contactdetail);
+        fetch(url,{
+          method:"POST",
+          body:data
+        }).then((res)=>res.text())
+        .then((finalres)=>{
+          e.target.btn.innerHTML = "Submitted!!😊";
+      
+          console.log(finalres)})
+        e.preventDefault();
+      })
+    </script>
+</body>
+</html>

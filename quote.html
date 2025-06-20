@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+</head>
+<body>
+
+    <style>
+  body {
+    font-family: 'Poppins', sans-serif;
+  }
+</style>
+    <main class="bg-gradient-to-br from-gray-400 via-slate-300 to-slate-600 ">
+
+        <!-- quote intro -->
+
+        <section class="py-20 max-w-7xl mx-auto  text-center">
+            <h class="font-poppins text-5xl font-bold text-center ">Quote</h1>
+            <p class="font-inter text-2xl font-normal text-gray-600 mt-10">"Get a custom quote tailored to your design, volume, and material needs. Our engineers
+                 will review and respond within 24–48 hours."</p>
+        </section>
+
+        <!-- flexing 2 pages of quotation -->
+
+        <form action="" id="form1" method="post">
+
+            <section class="lg:flex justify-center justify-items-center items-center mx-auto py-10 gap-2 lg:max-w-7xl ">
+            
+            <!-- form1 -->
+
+            <div class="lg:w-1/2 h-[44rem] bg-slate-600 text-white p-8 ">
+                <h1 class="text-center font-poppins text-5xl font-normal">General Information</h1>
+
+                <div class="mt-10">
+                    <label for="name" class="font-poppins text-xl">Company name</label><br> 
+                    <input type="text" placeholder="Company Name" class="bg-white py-3 px-2 w-full text-lg text-gray-600 rounded-2xl font-poppins mt-4 ring-0 focus:outline-none focus:ring-2 focus:ring-slate-500" name="company">
+                </div>
+
+                <div class="mt-10">
+                    <label for="email" class="font-poppins text-xl">Email</label><br> 
+                    <input type="text" placeholder="Email@gmail.com" class="bg-white py-3 px-2 w-full text-lg text-gray-600 rounded-2xl font-poppins mt-4 ring-0 focus:outline-none focus:ring-2 focus:ring-slate-500 " name="email">
+                </div>
+
+                 <div class="mt-10">
+                    <label for="phone" class="font-poppins text-xl">Contact No.</label><br> 
+                    <input type="number" placeholder="91+" class="bg-white py-3 px-2 w-full text-lg text-gray-600 rounded-2xl font-poppins mt-4 ring-0 focus:outline-none focus:ring-2 focus:ring-slate-500" name="contact">
+                </div>
+
+                 <div class="mt-10">
+                    <label for="name" class="font-poppins text-xl"> Name</label><br> 
+                    <input type="text" placeholder="Name" class="bg-white py-3 px-2 w-full text-lg text-gray-600 rounded-2xl font-poppins mt-4 ring-0 focus:outline-none focus:ring-2 focus:ring-slate-500" name="name">
+                </div>
+
+               
+             
+        </div>
+
+            <!-- form2 -->
+
+             <div class="lg:w-1/2 h-[44rem] bg-slate-300 text-gray-600 backdrop-blur-lg p-8 shadow-3xl" id="form2" method="post">
+                <h1 class="text-center font-poppins text-5xl font-normal">Regarding Job</h1>
+
+                <div class="mt-10">
+                    <label for="name" class="font-poppins text-xl">Type Of Service</label><br> 
+                    <input type="text" placeholder="Company Name" class="bg-white py-3 px-2 w-full text-lg text-gray-600 rounded-2xl font-poppins mt-4 ring-0 focus:outline-none focus:ring-2 focus:ring-slate-500" name="service">
+                </div>
+
+                <div class="mt-10">
+                    <label for="email" class="font-poppins text-xl">Material Required</Address></label><br> 
+                    <input type="text" placeholder="steel..." class="bg-white py-3 px-2 w-full text-lg text-gray-600 rounded-2xl font-poppins mt-4 ring-0 focus:outline-none focus:ring-2 focus:ring-slate-500" name="material">
+                </div>
+
+                 <div class="mt-10">
+                    <label for="phone" class="font-poppins text-xl">Quantity Needed</Address></label><br> 
+                    <input type="number" placeholder="Nos" class="bg-white py-3 px-2 w-full text-lg text-gray-600 rounded-2xl font-poppins mt-4 ring-0 focus:outline-none focus:ring-2 focus:ring-slate-500" name="quantity">
+                </div>
+
+                 <div class="mt-10">
+                    <label for="name" class="font-poppins text-xl">Additional Notes</label><br> 
+                    <textarea row="1"  placeholder="additional message"  class="bg-white  w-full text-lg text-gray-600 py-3 px-2 rounded-2xl font-poppins mt-4 ring-0 focus:outline-none focus:ring-2 focus:ring-slate-500"></textarea>
+                   
+                </div>
+
+            </div>
+
+
+        </section>
+
+          <div class="flex justify-center items-center gap-4">
+
+            <!-- submit button -->
+
+              <div class="flex  justify-center items-center py-20  hover:-translate-y-1 transform duration-300 transition">
+             
+            <button class="py-3 px-10 font-poppins text-2xl  shadow-xl bg-gray-600 text-white  rounded-full  cursor-pointer " name="btn">Submit Quote</button>
+            
+            </div>
+             
+         <!-- home button -->
+
+         <div class="flex  justify-center items-center py-20  hover:-translate-y-2 transform duration-300 transition">
+             <a href="index.html">
+            <button class="py-3 px-10 font-poppins text-2xl  shadow-xl bg-gray-600 text-white  rounded-full  cursor-pointer "> Back to Home</button>
+            </a>
+            </div>
+
+        </div>
+
+        </form>
+
+        <!-- send button home button --> 
+
+
+      
+
+
+    </main>
+
+    <script>
+        let url ='https://script.google.com/macros/s/AKfycbysfPfUvJmUflCEOmRiF3upk2fJweqhhNCnqPLdgmAW834p_C336OUI4FOJl_YKI2pk/exec';
+        let form1 = document.querySelector('#form1');
+       form1.addEventListener("submit",(e)=>{
+          e.target.btn.innerHTML ="Submitting.....";
+        let data = new FormData(form1);
+        fetch(url,{
+            method:"POST",
+            body:data
+        }).then((res)=>res.text())
+        .then((finalres)=>{
+             e.target.btn.innerHTML = "Submitted!!😊";
+            console.log(finalres)
+        })
+        e.preventDefault();
+       })
+
+      
+    </script>
+</body>
+</html>

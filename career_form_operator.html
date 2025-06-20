@@ -1,0 +1,115 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="output.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+</head>
+<body>
+ <style>
+  body {
+    font-family: 'Poppins', sans-serif;
+  }
+</style>
+
+
+    <main class="bg-gradient-to-br from-gray-400 via-slate-300 to-slate-600">
+        <div class="py-10 text-center">
+            <h1 class="font-poppins text-5xl font-bold">Carrer at <span class="text-slate-600">KHUSHIYA TOOLS</span> </h1>
+        </div>
+<form action="" id="careerform" method="post">
+
+          <div class="lg:w-3xl w-xl bg-slate-600 inset-0 backdrop-blur-0 text-white p-8 mx-auto mt-10 rounded-xl" >
+                <h1 class="text-center font-poppins text-5xl font-normal">Information</h1>
+
+                <div class="mt-10">
+                    <label for="name" class="font-poppins text-xl">Full Name</label><br> 
+                    <input type="text" placeholder="Company Name" class="bg-white py-3 px-2 w-full text-lg text-gray-600 rounded-2xl font-poppins mt-4 ring-0 focus:outline-none focus:ring-2 focus:ring-slate-500"required name="name">
+                </div>
+
+                <div class="mt-10">
+                    <label for="email" class="font-poppins text-xl">Email</Address></label><br> 
+                    <input type="text" placeholder="Email@gmail.com" class="bg-white py-3 px-2 w-full text-lg text-gray-600 rounded-2xl font-poppins mt-4 ring-0 focus:outline-none focus:ring-2 focus:ring-slate-500 "required name="email">
+                </div>
+
+                 <div class="mt-10">
+                    <label for="phone" class="font-poppins text-xl">Contact No.</Address></label><br> 
+                    <input type="number" placeholder="Enter 10-digit number" class="bg-white py-3 px-2 w-full text-lg text-gray-600 rounded-2xl font-poppins mt-4 ring-0 focus:outline-none focus:ring-2 focus:ring-slate-500" required pattern="[0-9]{10} " minlength="10" maxlength="10" name="contact">
+                </div>
+
+                 <div class="mt-10">
+                    <label for="name" class="font-poppins text-xl">Degree</label><br> 
+                    <input type="text" placeholder="Name" class="bg-white py-3 px-2 w-full text-lg text-gray-600 rounded-2xl font-poppins mt-4 ring-0 focus:outline-none focus:ring-2 focus:ring-slate-500"required name="degree">
+                </div>
+
+                <div class="mt-10">
+                    <label for="name" class="font-poppins text-xl">Experience in the feild</label><br> 
+                    <input type="number" placeholder="1-2 yrs" class="bg-white py-3 px-2 w-full text-lg text-gray-600 rounded-2xl font-poppins mt-4 ring-0 focus:outline-none focus:ring-2 focus:ring-slate-500" name="expe">
+                </div>
+
+                 <div class="mt-10">
+                    <label for="name" class="font-poppins text-xl">Current Company</label><br> 
+                    <input type="text" placeholder="Company you are working" class="bg-white py-3 px-2 w-full text-lg text-gray-600 rounded-2xl font-poppins mt-4 ring-0 focus:outline-none focus:ring-2 focus:ring-slate-500" name="company">
+                </div>
+
+            
+</div>
+
+             <div class="flex justify-center items-center gap-4">
+                
+
+            <!-- submit button -->
+
+              <div class="flex  justify-center items-center py-20  hover:-translate-y-1  transform duration-300 transition">
+             
+            <button class="py-3 px-4 font-poppins text-2xl  shadow-xl bg-gray-600 text-white  rounded-full " name="btn">Submit form</button>
+            
+            </div>
+        
+             
+         <!-- home button -->
+
+         <div class="flex  justify-center items-center py-20  hover:-translate-y-2 transform duration-300 transition">
+             <a href="index.html">
+            <button class="py-3 px-4 font-poppins text-2xl  shadow-xl bg-gray-600 text-white  rounded-full " type="reset">Reset Form</button>
+            </a>
+            </div>
+
+        </div>
+    </form>
+     <div class="flex  justify-center items-center py-20  hover:-translate-y-2 transform duration-300 transition">
+             <a href="index.html">
+            <button class="py-3 px-4 font-poppins text-2xl  shadow-xl bg-gray-600 text-white  rounded-full "> Back to Home</button>
+            </a>
+            </div>
+
+
+    </main>
+
+    <script>
+        let url = "https://script.google.com/macros/s/AKfycby2W8G8DoFhWuFS0j0grMAOAIki5ONLcn1_Nq7wdpgjQMI3bFqWa0qQ6pCPEiCT6JI/exec";
+        let form = document.querySelector('#careerform');
+        form.addEventListener("submit",(e)=>{
+              e.target.btn.innerHTML ="Submitting.....";
+            let data = new FormData(form);
+            fetch(url,{
+                method:"POST",
+                body:data
+            }).then((res)=>res.text())
+            .then((finalres)=>{
+                 e.target.btn.innerHTML = "Submitted!!😊";
+                console.log(finalres)
+            })
+
+            e.preventDefault();
+        })
+    </script>
+    
+</body>
+</html>
