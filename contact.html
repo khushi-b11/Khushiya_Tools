@@ -32,16 +32,16 @@
 
                 <!-- button1 -->
                   
-                    <div class="bg-white flex justify-start items-center gap-2 py-4 px-6 rounded-3xl lg:w-1/2">
+                    <div class="bg-white flex justify-start items-center gap-2 py-4 px-6 rounded-3xl lg:w-1/2 ">
                       <i class="fa-regular fa-envelope text-2xl text-gray-400 "></i>
-                     <input type="email" placeholder="Email" class=" md:text-xl  text-lg font-poppins rounded-3xl border-none outline-none" name="email">
+                     <input type="email" placeholder="Email" class=" md:text-xl bg-white text-lg font-poppins rounded-3xl border-none outline-none ring-0 focus:outline-none w-full" name="email" required>
                     </div>
 
                     <!-- button2 -->
 
                      <div class="bg-white flex justify-start items-center gap-2 py-4 px-6 rounded-3xl lg:w-1/2">
                       <i class="fa-solid fa-user text-2xl font-poppins text-gray-400 "></i>
-                     <input type="name" placeholder="Name" class=" md:text-xl font-poppins text-lg rounded-3xl border-none outline-none" name="name">
+                     <input type="name" placeholder="Name" class=" md:text-xl font-poppins text-lg rounded-3xl border-none outline-none" name="name" required>
                     </div>
 
                   </div>
@@ -61,12 +61,12 @@
                
                   <!-- footer of contact section -->
 
-                  <div class="py-60">
-                    <div class="bg-black/30 backdrop-blur-3xl  w-full h-60  flex" >
+                  <div class="lg:py-60 py-30">
+                    <div class="bg-black/30 backdrop-blur-3xl w-full lg:h-60  lg:flex space-y-8 lg:space-y-0" >
 
                    <!-- location -->
 
-                    <div id="location" class=" mx-auto  flex flex-col items-center justify-center -translate-y-12 gap-3">
+                    <div id="location" class=" mx-auto   flex flex-col items-center justify-center lg:-translate-y-12 gap-3">
                       <div class="md:h-40 md:w-40 h-20 w-20 bg-white rounded-full flex justify-center items-center  border border-gray-300">
                         <i class="fa-solid fa-location-dot md:text-5xl text-3xl"></i>
                       </div>
@@ -79,7 +79,7 @@
 
                     <!--email  -->
 
-                    <div class=" mx-auto  flex flex-col items-center justify-center  -translate-y-12 gap-3">
+                    <div class=" mx-auto  flex flex-col items-center justify-center  lg:-translate-y-12 gap-3">
                       <div class="md:h-40 md:w-40 h-20 w-20 bg-white rounded-full flex justify-center items-center  border border-gray-300">
                        <i class="fa-regular fa-envelope  text-3xl md:text-5xl"></i>
                       </div>
@@ -92,7 +92,7 @@
 
                     <!-- phone number -->
 
-                    <div class=" mx-auto flex flex-col items-center justify-center  -translate-y-12 gap-3">
+                    <div class=" mx-auto flex flex-col items-center justify-center  lg:-translate-y-12 gap-3">
                       <div class="md:h-40 md:w-40 h-20 w-20 bg-white rounded-full flex justify-center items-center  border border-gray-300">
                         <i class="fa-solid fa-phone md:text-5xl text-3xl"></i> 
                       </div>
@@ -111,25 +111,25 @@
                 <!-- quotation -->
 
             <div class="lg:w-4xl  bg-transparent text-gray-600 backdrop-blur-lg p-8 shadow-3xl mx-auto ">
-                <h1 class="text-center font-poppins text-5xl font-normal">Want to quote?</h1>
+                <h1 class="text-center font-poppins lg:text-5xl text-3xl font-bold">Want to quote?</h1>
 
-                <div class="mt-10">
-                    <label for="name" class="font-poppins text-xl">Type Of Service</label><br> 
-                    <input type="text" placeholder="Company Name" class="bg-white py-3 px-2 w-full text-lg text-gray-600 rounded-2xl font-poppins mt-4 ring-0 focus:outline-none focus:ring-2 focus:ring-slate-500" name="service">
+                <div class="mt-10 ">
+                    <label for="name" class="font-poppins lg:text-xl">Type Of Service</label><br> 
+                    <input type="text" placeholder="Company Name" class="bg-white py-3 px-2 w-full text-lg text-gray-600 rounded-2xl font-poppins mt-4 ring-0 focus:outline-none focus:ring-2 focus:ring-slate-500" name="service" required>
                 </div>
 
-                <div class="mt-10">
-                    <label for="email" class="font-poppins text-xl">Material Required</Address></label><br> 
-                    <input type="text" placeholder="steel..." class="bg-white py-3 px-2 w-full text-lg text-gray-600 rounded-2xl font-poppins mt-4 ring-0 focus:outline-none focus:ring-2 focus:ring-slate-50 " name = "material">
+                <div class="mt-10 ">
+                    <label for="email" class="font-poppins lg:text-xl">Material Required</Address></label><br> 
+                    <input type="text" placeholder="steel..." class="bg-white py-3 px-2 w-full text-lg text-gray-600 rounded-2xl font-poppins mt-4 ring-0 focus:outline-none focus:ring-2 focus:ring-slate-50 " name = "material" required>
                 </div>
 
                  <div class="mt-10">
-                    <label for="phone" class="font-poppins text-xl">Quantity Needed</Address></label><br> 
+                    <label for="phone" class="font-poppins lg:text-xl">Quantity Needed</Address></label><br> 
                     <input type="number" placeholder="Nos" class="bg-white py-3 px-2 w-full text-lg text-gray-600 rounded-2xl font-poppins mt-4 ring-0 focus:outline-none focus:ring-2 focus:ring-slate-500" name="quantity">
                 </div>
 
                  <div class="mt-10">
-                    <label for="name" class="font-poppins text-xl">Additional Notes</label><br> 
+                    <label for="name" class="font-poppins lg:text-xl">Additional Notes</label><br> 
                     <textarea row="1"  placeholder="additional message"  class="bg-white  w-full text-lg text-gray-600 py-3 px-2 rounded-2xl font-poppins mt-4 ring-0 focus:outline-none focus:ring-2 focus:ring-slate-500"></textarea>
                    
                 </div>
@@ -138,15 +138,15 @@
 
                  <div class="flex  justify-center items-center py-20 gap-10">
              
-                 <button class="py-3 px-10 font-poppins text-2xl  shadow-xl bg-gray-600 text-white  rounded-full   hover:-translate-y-1 transform duration-300 transition  cursor-pointer ">Submit Quote</button>
+                 <button class="lg:py-3 lg:px-10 py-1 px-3 font-poppins lg:text-2xl text-xl  shadow-xl bg-gray-600 text-white  rounded-full   hover:-translate-y-1 transform duration-300 transition  cursor-pointer ">Submit Quote</button>
                  <a href="index.html" class="flex justify-center items-center">
-                 <button class="py-3 px-10 font-poppins text-2xl  shadow-xl hover:shadow-2xl bg-gray-600 text-white transition-all rounded-full   hover:-translate-y-1 transform duration-300 cursor-pointer " type="reset"> Reset form</button>
+                 <button class="lg:py-3 lg:px-10  py-1 px-3  font-poppins  lg:text-2xl text-xl  shadow-xl hover:shadow-2xl bg-gray-600 text-white transition-all rounded-full   hover:-translate-y-1 transform duration-300 cursor-pointer " type="reset"> Reset form</button>
                  </a>
                </div>
                  </form>
 
                 <a href="index.html" class="flex justify-center items-center">
-                 <button class="py-3 px-10 font-poppins text-2xl  shadow-xl hover:shadow-2xl bg-gray-600 text-white transition-all rounded-full   hover:-translate-y-1 transform duration-300 cursor-pointer "> Back to Home</button>
+                 <button class="lg:py-3 lg:px-10  py-1 px-3  font-poppins  lg:text-2xl text-xl  shadow-xl hover:shadow-2xl bg-gray-600 text-white transition-all rounded-full   hover:-translate-y-1 transform duration-300 cursor-pointer "> Back to Home</button>
                  </a>
             
                  </section>
